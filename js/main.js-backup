@@ -1,0 +1,34 @@
+ $(document).ready(function(){
+
+ var imgArr = new Array( // relative paths of images
+ 'img/bg/bg01.jpg',
+ 'img/bg/bg02.jpg',
+ 'img/bg/bg03.jpg',
+ 'img/bg/bg04.jpg'
+ );
+
+ var preloadArr = new Array();
+ var i;
+
+ /* preload images */
+ for(i=0; i < imgArr.length; i++){
+ preloadArr[i] = new Image();
+ preloadArr[i].src = imgArr[i];
+ }
+
+ var currImg = 1;
+ var intID = setInterval(changeImg, 3000);
+ 
+ $('html').css('background', 'url(img/bg/bg05.jpg) no-repeat center center fixed');
+
+ /* image rotator */
+ function changeImg(){
+ $('html').animate({opacity: 0}, 1000, function(){
+ $(this).css('background','url(' + preloadArr[currImg++%preloadArr.length].src +') no-repeat center center fixed');
+ }).animate({opacity: 1}, 1000);
+ console.log("hello");
+
+ }
+
+ });
+ 
