@@ -148,14 +148,14 @@ body {
 	
 	text-align: center;
 	
+	padding-top: 10px;
+	padding-bottom: 10px;
 
-	padding: 10px;
-	
 	font-size:2em;
 
 
 	position: absolute;
-	bottom: 20px;
+	bottom: 40px;
 
     border-left: 0px;
     border-right: 0px;
@@ -163,6 +163,9 @@ body {
 	width: 100%;
 }
 
+#menu a {
+	word-spacing: 14px;
+}
 
 a {
 	text-decoration: none;
