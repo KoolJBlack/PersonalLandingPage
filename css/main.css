@@ -191,6 +191,19 @@ body {
 	word-spacing: 14px;
 }
 
+#credit {
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#credit h3 {
+	text-align: center;
+	margin-bottom: 10px;
+}
+
 a {
 	text-decoration: none;
 	text-transform: uppercase;
